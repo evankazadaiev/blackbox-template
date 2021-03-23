@@ -1,0 +1,60 @@
+@mixin typo-extender($size, $lh, $weight, $spacing) {
+  font-size: $size;
+  line-height: $lh;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+}
+
+
+
+h1 {
+  @include typo-extender(72px, 110%, 600, -3%);
+}
+
+h2 {
+  @include typo-extender(64px, 120%, 600, -3%);
+}
+
+h3 {
+  @include typo-extender(48px, 120%, 600, -3%);
+}
+
+h4 {
+  @include typo-extender(40px, 120%, 600, -3%);
+}
+
+h5 {
+  @include typo-extender(24px, 120%, 600, -3%);
+}
+
+h6 {
+  @include typo-extender(20px, 120%, 600, -3%);
+}
+
+.subtitle_1 {
+  @include typo-extender(24px, 160%, 400, -3%);
+}
+
+.subtitle_2 {
+  @include typo-extender(20px, 160%, 400, -3%);
+}
+
+.subtitle_3 {
+  @include typo-extender(16px, 160%, 400, -3%);
+}
+
+.overline {
+  @include typo-extender(14px, 100%, 400, -3%);
+}
+
+.blockquote_1 {
+  @include typo-extender(40px, 150%, 400, -3%);
+}
+
+.blockquote_2 {
+  @include typo-extender(32px, 140%, 400, -3%);
+}
+
+@mixin input-font {
+  @extend .subtitle_3;
+}

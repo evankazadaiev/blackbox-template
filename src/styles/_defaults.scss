@@ -1,0 +1,50 @@
+html, body {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: calc(100% - (9.642% * 2));
+  margin: 0 auto;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 24px;
+  //max-width: 100px;
+  height: 43px;
+  border-radius: 24px;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+
+  &.btn-primary {
+    background: $blue;
+    color: $white;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+
+.text-centered {
+  width: 100%;
+
+    * {
+      width: 100%;
+      text-align: center;
+    }
+}
+
+.link-with-arrow {
+  display: block;
+}

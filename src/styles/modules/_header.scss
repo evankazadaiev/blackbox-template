@@ -1,0 +1,46 @@
+.header {
+  @include flex-between-centered;
+  padding: 16px 0;
+
+  .logo-wrapper {
+    width: 100%;
+    max-width: 101px;
+    max-height: 18px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .nav-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    @include flex-between-centered;
+
+    &__item {
+      padding: 22px 8px;
+      margin-right: 24px;
+
+      &:first-child {
+        margin-left: 8px;
+      }
+
+      &:last-child {
+        margin-right: 8px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+        letter-spacing: -3%;
+        font-weight: 600;
+        color: $black;
+      }
+    }
+  }
+
+}

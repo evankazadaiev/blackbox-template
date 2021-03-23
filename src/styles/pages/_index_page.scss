@@ -1,0 +1,119 @@
+.main-page {
+  .main {
+    padding: 166px 0;
+
+      .content {
+        &__title {
+          margin: 0 0 24px 0;
+        }
+        &__description {
+          max-width: 90%;
+          margin-bottom: 24px;
+        }
+
+        .input-control-wrapper {
+          @include flex-between-centered;
+        }
+
+        .input-control {
+          max-width: 80%;
+          padding: 8px 8px 8px 24px;
+          border: 1px solid $grey;
+          box-sizing: border-box;
+          border-radius: 100px;
+
+          &__input {
+            @include input-font;
+            border: 0;
+            outline: none;
+            flex: 0 0 50%;
+            max-width: 50%;
+            height: 43px;
+          }
+        }
+      }
+
+      .row-item__left {
+        flex: 0 0 53%;
+        max-width: 53%;
+      }
+
+      .row-item-right {
+        flex: 0 0 47%;
+        max-width: 47%;
+      }
+
+      .image-wrapper {
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: translate(-35%, -15%);
+          z-index: -1;
+        }
+
+        @media screen and (max-width: 1200px) {
+          img {
+            transform: translate(-40%, -15%);
+          }
+        }
+      }
+
+    }
+
+    .why-choose {
+      padding: 99px 0 119px;
+      &__description {
+
+        h3 {
+          margin-top: 0;
+          margin-bottom: 1.18rem;
+        }
+
+        p {
+          margin-bottom: 3.43rem;
+        }
+
+      }
+
+      &__block-row {
+        align-items: center;
+      }
+
+      &__contents {
+        align-items: center;
+
+        .image-wrapper {
+          position: relative;
+          width: 100%;
+          height: 255px;
+
+          img {
+            position: absolute;
+            top: 0;
+            left: -80%;
+          }
+        }
+
+        .row-item {
+          border-radius: 16px;
+          flex: 0 1 49%;
+          max-width: 49%;
+          padding: 1.37rem 1.37rem 1.43rem 3rem;
+
+          &__left {
+            background-color: $blue-light;
+          }
+
+          &__right {
+            background-color: $pink-light;
+          }
+        }
+      }
+    }
+}
+
